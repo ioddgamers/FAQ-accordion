@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+img, svg{
+    mix-width: 100%;
+    display: block;
+}
+
+*{
+    font-family: "Work Sans", sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.half {
+    flex: 1;
+    height: 100%;
+}
+
+.background-img {
+    background-image: url('assets/images/background-pattern-mobile.svg');
+    background-size: cover;
+    z-index: 1;
+    width: 100%;
+    position: relative;
+}
+
+.solid-color {
+    background-color: hsl(275, 100%, 97%);
+    z-index: -2;
+}
+
+.section-overlay {
+    position: absolute;
+    width: 90%;
+    z-index: 2;
+    background-color: white;
+    top: 30%;
+    margin: 0 5%;
+    border-radius: 10px;
+    height: 50vh;
+    padding: 20px;
+}
+
+h1 {
+    color: hsl(292, 42%, 14%);
+    font-size: 30px;
+    margin: 2% 0 5% 10%;
+
+}
+
+.image1 {
+    float: left;
+    width: 23px;
+    margin: 4% 0;
+}
+
+h2 {
+    font-size: 21px;
+    float: clear right;
+    margin: 5% 0;
+}
+
+h2:hover {
+    color: rgb(220, 22, 214);
+}
+
+.image2 {
+    float: right;
+    margin: 5% 0;
+}
+
+.note {
+    color: hsl(292, 16%, 49%);
+    font-size: 17px;
+    margin: 5px 0 5px 0;
+    float: clear right;
+}
+
+#answer {
+    color: hsl(292, 16%, 49%);
+    font-size: 17px;
+    margin: 5px 0 5px 0;
+    float: clear right;
+}
+
+.hidden {
+    display: none;
+}
