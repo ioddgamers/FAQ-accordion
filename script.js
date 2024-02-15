@@ -4,8 +4,8 @@ function displayAnswer(clickedElement) { //clickedElement is the element that wa
 
     const image = clickedElement.previousElementSibling;//Retrieving the previous sibling of the element being clicked. My previous sibling here is the img
     if (image.src.includes("plus")) { //Checking if the src attribute of my image contains the "plus" string 
-        image.src = "/images/icon-minus.svg"; //If it does, I want to change the image to the src provided
+        image.src = "images/icon-minus.svg"; //If it does, I want to change the image to the src provided
     } else {
-        image.src = "/images/icon-plus.svg";//If it doesn't, leave the image
+        image.src = "images/icon-plus.svg";//If it doesn't, leave the image
     }
 }
